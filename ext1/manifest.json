@@ -9,9 +9,16 @@
   "content_scripts": [
     {
       "js": ["content.js"],
-      "matches": ["https://*.youtube.com/*"]
+      "matches": ["https://*.youtube.com/*"],
+      "exclude_matches": [],
+      "run_at": "document_end"
     }
   ],
 
-  "permissions": ["bookmarks"]
+  "permissions": ["bookmarks", "storage"],
+  "icons": {
+    "16": "icon-m.png",
+    "48": "icon-m.png",
+    "128": "icon-m.png"
+  }
 }

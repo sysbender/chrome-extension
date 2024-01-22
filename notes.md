@@ -12,3 +12,10 @@ chrome://extensions - developer mode
 
 create manifest.json
 load extension
+
+### chrome.storage,
+
+- local storage
+- sync storage -if sync is not enable by the account, it acts as local
+
+permissions : "storage"
