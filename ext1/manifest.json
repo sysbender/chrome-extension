@@ -1,0 +1,17 @@
+{
+  "name": "ext1",
+  "version": "1.0.0",
+  "description": "first",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+
+  "permissions": ["bookmarks"]
+}
