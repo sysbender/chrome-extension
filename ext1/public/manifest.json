@@ -18,9 +18,9 @@
   "permissions": ["bookmarks", "storage", "activeTab", "contextMenus"],
   "host_permissions": ["https://api.github.com/*"],
   "icons": {
-    "16": "icon-m.png",
-    "48": "icon-m.png",
-    "128": "icon-m.png"
+    "16": "icons/icon-m.png",
+    "48": "icons/icon-m.png",
+    "128": "icons/icon-m.png"
   },
   "options_page": "options/options.html"
 }
