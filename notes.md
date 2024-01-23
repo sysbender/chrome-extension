@@ -19,3 +19,8 @@ load extension
 - sync storage -if sync is not enable by the account, it acts as local
 
 permissions : "storage"
+
+### sendmessage
+
+chrome.runtime.sendMessage( message, callback) - send to extension , - runtime.onMessage() - receive by extension - runtime.onMessageExternal() - receive by other extension
+chrome.tabs.sendMessage() - send to content
