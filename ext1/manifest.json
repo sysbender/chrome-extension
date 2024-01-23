@@ -8,7 +8,7 @@
   },
   "content_scripts": [
     {
-      "js": ["content.js", "contentMessaging.js"],
+      "js": ["content.js", "contentMessaging.js", "contentRequest.js"],
       "matches": ["https://*.youtube.com/*"],
       "exclude_matches": [],
       "run_at": "document_end"
@@ -16,9 +16,11 @@
   ],
 
   "permissions": ["bookmarks", "storage", "activeTab", "contextMenus"],
+  "host_permissions": ["https://api.github.com/*"],
   "icons": {
     "16": "icon-m.png",
     "48": "icon-m.png",
     "128": "icon-m.png"
-  }
+  },
+  "options_page": "options/options.html"
 }
